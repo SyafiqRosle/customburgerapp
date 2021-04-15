@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Burgers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <h1 class="head">Custom Burgers</h1>
+    </nav>
+    <main class="main">
+
+        <div class="menuCont">
+            <div class="formCont">
+                <form action="/index.html" method="POST">
+
+                    <select name="ingredientList" id="ingredientList">
+                        <option value="cheese">Cheese</option>
+                        <option value="patty">Beef Patty</option>
+                        <option value="maple">Maple Syrup</option>
+                        <option value="lettuce">Lettuce</option>
+                        <option value="egg">Egg</option>
+                        <option value="topbun">Top Bun</option>
+
+                    </select>
+                    <input class="addButton" type="button" value="+" onclick="add()">
+
+                </form>
+
+            </div>
+
+
+        </div>
+
+
+        <ul class="burgerCont">
+
+            <li class="botCont" id="a0">
+                <img src="img/bottombun.png" alt="" class="bot">
+            </li>
+            <li class="tableCont">
+                <img src="img/table.png" alt="" class="table">
+            </li>
+
+        </ul>
+
+    </main>
+    <script>
+
+    </script>
+    <script src="index.js"></script>
+</body>
+
+</html>

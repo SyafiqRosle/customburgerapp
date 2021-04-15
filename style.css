@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Karantina:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+body {
+  height: 1920px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+body .navbar {
+  height: 5%;
+  width: 100%;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .navbar .head {
+  font-family: 'Karantina';
+  font-size: 4em;
+  color: white;
+  margin: 0;
+}
+
+body .main {
+  height: 43em;
+  background-color: #E5E5E5;
+  overflow: hidden;
+}
+
+body .main .formCont {
+  margin-top: 2em;
+  position: absolute;
+  z-index: 10;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+body .main .menuCont form #ingredientList {
+  border: none;
+  border-radius: 15px;
+  font-family: 'Roboto';
+  font-size: 2em;
+  padding: 15px;
+  text-align: center;
+  width: 8em;
+}
+
+body .main .menuCont form #ingredientList:hover {
+  cursor: pointer;
+}
+
+body .main .addButton {
+  background-color: #FFDE2E;
+  font-family: 'Roboto';
+  position: relative;
+  font-size: 2.0em;
+  border-radius: 35px;
+  border-style: none;
+  outline: none;
+  padding: 15px;
+  width: 2.5em;
+  height: 2em;
+  font-weight: bold;
+  -webkit-box-shadow: 8px 5px 5px rgba(0, 0, 0, 0.389);
+          box-shadow: 8px 5px 5px rgba(0, 0, 0, 0.389);
+  margin: 15px;
+}
+
+body .main .addButton:hover {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 750px) {
+  body .main .addButton {
+    position: absolute;
+    top: 60vh;
+  }
+}
+
+body .main .burgerCont {
+  margin: 0;
+  list-style-type: none;
+  height: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+body .main .burgerCont .ingredients {
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  position: absolute;
+  opacity: 0;
+}
+
+body .main .burgerCont .ingredients.anim {
+  opacity: 1;
+}
+
+body .main .burgerCont .botCont {
+  -webkit-transform: translateY(5em);
+          transform: translateY(5em);
+}
+
+body .main .burgerCont .table {
+  margin: 0;
+  width: 20em;
+}
+/*# sourceMappingURL=style.css.map */
